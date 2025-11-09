@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire's Apparel Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* 🌸 Light Orange and Pink Gradient Background */
+      background: linear-gradient(135deg, #ffd6a5, #ffb5e8);
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav button:hover,
+    nav button.active {
+      background-color: #0a7b58;
+      color: #fff;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin-top: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro h2 {
+      font-size: 22px;
+      color: #222;
+      letter-spacing: 1px;
+    }
+
+    .product-section {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .product-price {
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .product-tag {
+      color: #0a7b58;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .feedback-section {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 40px auto;
+      max-width: 500px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feedback-section h2 {
+      margin-bottom: 15px;
+    }
+
+    .feedback-section input,
+    .feedback-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .feedback-section button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .feedback-section button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 30px;
+      font-size: 16px;
+      color: #333;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      backdrop-filter: blur(5px);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .product-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CLAIRE'S APPAREL SHOP</h1>
+   <nav>
+  <button data-category="all" class="active">Home</button>
+  <button data-category="men">Men</button>
+  <button data-category="women">Women</button>
+  <button data-category="sale">Sale</button>
+</nav>
+
+  </header>
+
+  <div class="intro">
+    <h2>HERE'S MY CODE FOR CLAIRE'S APPAREL SHOP</h2>
+    <p class="tagline">Step in style. Dress with confidence.</p>
+  </div>
+
+  
+  <!-- Product Section -->
+<section class="product-section">
+  <!-- MEN'S PRODUCTS -->
+  <div class="product-card men">
+    <img src="shoe1.webp" alt="Nike Air Zoom GT Cut 3 EP">
+    <p class="product-tag">Hot Item</p>
+    <p class="product-name">Nike Air Zoom GT Cut 3 EP</p>
+    <p>Originals</p>
+    <p>5 colours</p>
+    <p class="product-price">₱18,800</p>
+  </div>
+
+  <div class="product-card men">
+    <img src="pants1.webp" alt="Men's Denim Pants Khaki ">
+    <p class="product-tag">Trending</p>
+    <p class="product-name">Men's Denim Pants Khaki </p>
+    <p>Originals</p>
+    <p>7 colours</p>
+    <p class="product-price">₱2,900</p>
+  </div>
+
+  <div class="product-card men sale">
+    <img src="tshirt1.webp" alt="Lost at Sea Graphic Tee Graphic">
+    <p class="product-tag">Hot Item</p>
+    <p class="product-name">Lost at Sea Graphic Tee Graphic</p>
+    <p>Originals</p>
+    <p>3 colours</p>
+    <p class="product-price">₱2,200</p>
+  </div>
+
+  <!-- WOMEN'S PRODUCTS -->
+  <div class="product-card women">
+    <img src="shoe2.webp" alt="Jordan Air 1 Low Women's">
+    <p class="product-tag">New Arrival</p>
+    <p class="product-name">Jordan Air 1 Low Women's</p>
+    <p>Essentials</p>
+    <p>5 colours</p>
+    <p class="product-price">₱6,200</p>
+  </div>
+
+  <div class="product-card women">
+    <img src="pants2.webp" alt="banana republic The Everyday Wide-Leg Pant">
+    <p class="product-tag">Best Seller</p>
+    <p class="product-name">banana republic The Everyday Wide-Leg Pant</p>
+    <p>Casual Wear</p>
+    <p>4 colours</p>
+    <p class="product-price">₱2,800</p>
+  </div>
+
+  <div class="product-card women sale">
+    <img src="tshirt2.webp" alt="Each X Other - logo-print crew-neck T-shirt - women - Cotton - 44 - Neutrals">
+    <p class="product-tag">Fresh</p>
+    <p class="product-name">Each X Other - logo-print crew-neck T-shirt - women - Cotton - 44 - Neutrals</p>
+    <p>Essentials</p>
+    <p>4 colours</p>
+    <p class="product-price">₱3,800</p>
+  </div>
+</section>
+
+  <!-- Feedback Form -->
+  <section class="feedback-section">
+    <h2>We'd Love Your Feedback!</h2>
+    <p>Let us know your thoughts or suggestions below:</p>
+
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+  <p>Thank you for visiting our website! 👟👕</p>
+  <p>
+    Visit our online shop:
+    <a href="https://yourwebsite.github.io/claires-apparel-shop/" target="_blank">
+      Claire's Apparel Official Website
+    </a>
+  </p>
+</footer>
+
+
+  <!-- 🔸 JavaScript for Product Filtering -->
+ <script>
+  const buttons = document.querySelectorAll("nav button");
+  const products = document.querySelectorAll(".product-card");
+
+  function showProducts(category) {
+    products.forEach(product => {
+      if (category === "all") {
+        product.style.display = "block";
+      } else if (product.classList.contains(category)) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
+
+    // highlight active button
+    buttons.forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`[data-category="${category}"]`).classList.add("active");
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.category;
+      showProducts(category);
+    });
+  });
+
+  // default view
+  showProducts("all");
+</script>
+
+
+</body>
+</html>
